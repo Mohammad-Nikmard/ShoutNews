@@ -35,6 +35,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.shoutnews.R
+import com.example.shoutnews.components.CustomElevatedButton
 import com.example.shoutnews.ui.theme.blackLighter
 import com.example.shoutnews.ui.theme.blackPrimary
 import com.example.shoutnews.ui.theme.greyDark
@@ -92,24 +93,7 @@ fun LoginScreen() {
                 )
             }
             Spacer(modifier = Modifier.height(24.dp))
-            ElevatedButton(
-                modifier = Modifier
-                    .height(56.dp)
-                    .fillMaxWidth(),
-                shape = RoundedCornerShape(12.dp),
-                colors = ButtonDefaults.buttonColors(
-                    containerColor = purplePrimary,
-                ),
-                onClick = {}) {
-                Text(
-                    "Sign In",
-                    style = TextStyle(
-                        fontSize = 16.sp,
-                        fontFamily = interSemiBold,
-                        color = Color.White,
-                    ),
-                )
-            }
+            CustomElevatedButton(onTapped = {}, text = "Sign In")
             Spacer(modifier = Modifier.weight(1f))
             Text(
                 "or",
@@ -232,7 +216,7 @@ private fun TextFieldSection() {
             disabledPrefixColor = greyPrimary,
             focusedContainerColor = Color.Transparent,
             unfocusedContainerColor = greyLighter,
-            ),
+        ),
         prefix = {
             Image(
                 modifier = Modifier.size(24.dp),
