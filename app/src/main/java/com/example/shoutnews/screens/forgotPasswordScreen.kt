@@ -32,6 +32,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.shoutnews.R
 import com.example.shoutnews.components.CustomElevatedButton
+import com.example.shoutnews.components.CustomSubRowText
 import com.example.shoutnews.ui.theme.blackLighter
 import com.example.shoutnews.ui.theme.blackPrimary
 import com.example.shoutnews.ui.theme.greyLighter
@@ -123,30 +124,11 @@ fun ForgotPasswordScreen() {
 
             Spacer(modifier = Modifier.weight(1f))
 
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.Center,
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                Text(
-                    "Remember the password? ",
-                    style = TextStyle(
-                        fontSize = 16.sp,
-                        fontFamily = interMedium,
-                        color = blackLighter,
-                    ),
-                )
-                Text(
-                    "Try again",
-                    style = TextStyle(
-                        fontSize = 16.sp,
-                        fontFamily = interMedium,
-                        color = blackPrimary,
-                    ),
-                )
+            CustomSubRowText(leftText = "Remember the password? ", rightText = "Try again")
 
-                Spacer(modifier = Modifier.height(100.dp))
-            }
+
+
+            Spacer(modifier = Modifier.height(24.dp))
         }
     }
 }
