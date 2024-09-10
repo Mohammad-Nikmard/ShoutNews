@@ -16,6 +16,7 @@ import com.example.shoutnews.screens.ForgotPasswordScreen
 import com.example.shoutnews.screens.LoginScreen
 import com.example.shoutnews.screens.SelectTopicScreen
 import com.example.shoutnews.screens.SignUpScreen
+import com.example.shoutnews.screens.WelcomeScreen
 import com.example.shoutnews.ui.theme.ShoutNewsTheme
 
 class MainActivity : ComponentActivity() {
@@ -24,7 +25,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             ShoutNewsTheme {
-                SelectTopicScreen()
+                WelcomeScreen()
             }
         }
     }
