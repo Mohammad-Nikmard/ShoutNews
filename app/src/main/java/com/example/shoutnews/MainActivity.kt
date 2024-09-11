@@ -18,6 +18,7 @@ import com.example.shoutnews.screens.LanguageScreen
 import com.example.shoutnews.screens.LoginScreen
 import com.example.shoutnews.screens.SelectTopicScreen
 import com.example.shoutnews.screens.SignUpScreen
+import com.example.shoutnews.screens.TermsScreen
 import com.example.shoutnews.screens.WelcomeScreen
 import com.example.shoutnews.ui.theme.ShoutNewsTheme
 
@@ -27,7 +28,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             ShoutNewsTheme {
-                CategoryScreen()
+                TermsScreen()
             }
         }
     }
