@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.shoutnews.screens.BookmarkScreen
 import com.example.shoutnews.screens.CategoryScreen
 import com.example.shoutnews.screens.ChangePasswordScreen
 import com.example.shoutnews.screens.CreatePasswordScreen
@@ -29,7 +30,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             ShoutNewsTheme {
-                ChangePasswordScreen()
+                BookmarkScreen()
             }
         }
     }
